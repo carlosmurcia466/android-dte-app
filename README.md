@@ -28,7 +28,7 @@ The application is designed around business-oriented document workflows, combini
 * REST APIs
 * JSON
 * Room
-* SQLite
+* SDK UROVO
 * Material Design
 
 ## Architecture
