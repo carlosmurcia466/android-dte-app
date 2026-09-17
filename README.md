@@ -46,7 +46,7 @@ Application / Business Logic
 REST API         Local Database
     │               │
     ▼               ▼
-Backend          Room / SQLite
+Backend            Room 
 ```
 
 This structure allows the application to communicate with backend services while maintaining local application data when required.
@@ -75,9 +75,4 @@ Database / Business Process
 
 Sensitive production endpoints, credentials and authentication secrets are intentionally excluded from the repository.
 
-## Local Data
-
-The application uses local persistence to store application data required by the mobile workflow.
-
-Room provides an abstraction layer over SQLite for structured local data management.
 
