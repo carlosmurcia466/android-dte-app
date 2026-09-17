@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:fitsSystemWindows="true"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/tvUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido, Usuario!"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#222"
+        android:layout_marginStart="15dp"
+        android:gravity="right"
+        android:drawableRight="@drawable/persona"
+        android:drawablePadding="10dp"
+        android:layout_margin="1dp" />
+    <TextView
+        android:id="@+id/tvSucursal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Sucursal!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#222"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/evento"
+        android:gravity="start"
+        android:drawablePadding="8dp"
+        android:layout_margin="3dp"
+        android:paddingLeft="30dp"/>
+    <TextView
+        android:id="@+id/tvCorrelativo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Correlativo!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#222"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/home"
+        android:drawablePadding="8dp"
+        android:layout_margin="3dp"
+        android:paddingLeft="30dp"
+        />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:padding="16dp"
+        android:columnOrderPreserved="false">
+
+
+        <!-- Tarjeta 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardInventario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            android:minHeight="160dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/menu"
+                    android:contentDescription="Inventario" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR MENU"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardClientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            card_view:cardCornerRadius="16dp"
+            android:minHeight="160dp"
+            card_view:cardElevation="8dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/listaclientes"
+                    android:contentDescription="Clientes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LISTA DE CLIENTES"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Tarjeta 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFactura"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            card_view:cardCornerRadius="16dp"
+            android:minHeight="160dp"
+            card_view:cardElevation="8dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/cajaregistradora"
+                    android:contentDescription="Clientes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REGISTRAR VENTA"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/documentos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_columnWeight="1"
+            card_view:cardCornerRadius="16dp"
+            android:minHeight="160dp"
+            card_view:cardElevation="8dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/documentosgenerados"
+                    android:contentDescription="Clientes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOCUMENTOS GENERADOS"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Más tarjetas aquí -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardReportes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            android:minHeight="160dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/reportes"
+                    android:contentDescription="Clientes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GENERAR REPORTES"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
+                <!-- ProgressBar centrado -->
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Más tarjetas aquí -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardEliminar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            android:minHeight="160dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/borrar"
+                    android:contentDescription="Clientes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIMPIAR DOCUMENTOS"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
+                <!-- ProgressBar centrado -->
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <!-- Tarjeta 4 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            android:minHeight="160dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/cerrarsesion"
+                    android:contentDescription="Clientes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CERRAR SESIÓN"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
+                <!-- ProgressBar centrado -->
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardBackgroundColor="#FFFFFF">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/tvCodigoFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código: GUID123"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvCodigAnulacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código: ANULACIÓN"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/LyRespuestaMH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:visibility="visible"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/tvFhProcMH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fh Proc: 2024-03-23"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:id="@+id/tvnumeroControl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero Control: DTE"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:id="@+id/tvestadoMH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ESTADO MH: En Proceso"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:id="@+id/tvselloMH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELLO MH: EMR2024"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:id="@+id/tvDescripcionMH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DescripcionMsg: Recibido"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:id="@+id/tvDescripcionMHAnulacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DescripcionMsg: sin datos"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:id="@+id/tvMotivoMHAnulacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sin datos"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tvFechaFactura"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fecha Emision: 2025-06-16"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvhoraFactura"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hora Emision: 12:00"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvtotalPagarFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: $9.99"
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvestadoFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESTADO: ACTIVO"
+            android:textSize="14sp"
+            android:textColor="#D32F2F"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+        <Button
+            android:id="@+id/btnReenviarFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REENVIAR FACTURA"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@android:drawable/ic_menu_send"
+            android:padding="8dp" />
+        <Button
+            android:id="@+id/btnGenerarTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generar Ticket"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@android:drawable/ic_menu_send"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnInvalidarFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INVALIDAR DOCUMENTO"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@android:drawable/ic_menu_send"
+            android:padding="8dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

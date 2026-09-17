@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Para los documentos guardados en /storage/.../Documents/ -->
+    <external-path
+        name="documents"
+        path="Documents/" />
+
+    <!-- Para los archivos guardados en getExternalFilesDir(null) -->
+    <external-files-path
+        name="external_files"
+        path="." />
+</paths>

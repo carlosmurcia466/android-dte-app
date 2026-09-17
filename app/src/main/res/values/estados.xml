@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estados_factura">
+        <item>TODOS</item>
+        <item>PROCESADO</item>
+        <item>RECHAZADO</item>
+        <item>EN PROCESO</item>
+            <item>INVALIDO</item>
+        <item>CONTINGENCIA</item>
+        <item>NO ENVIADO</item>
+    </string-array>
+</resources>
